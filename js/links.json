@@ -13,6 +13,11 @@
           "url": "https://yeyenmuhidin.github.io/tips-kerja/"
         },
         {
+          "title": "Portofolio Yeyen",
+          "description": "Kumpulan karya desain website.",
+          "url": "https://yeyenmuhidin.github.io/Portofolio/"
+        },
+        {
           "title": "Aruna Tulis",
           "description": "Contoh desain website untuk usaha batik.",
           "url": "https://yeyenmuhidin.github.io/Arun-tulis-demo/",
@@ -22,6 +27,12 @@
           "title": "Sarira Skin",
           "description": "Contoh desain website untuk merek skincare.",
           "url": "https://yeyenmuhidin732.wixsite.com/sarira-skin",
+          "badge": "contoh desain"
+        },
+        {
+          "title": "Kopi Lumintu",
+          "description": "Contoh desain website untuk kafe.",
+          "url": "https://yeyenmuhidin732.wixsite.com/kopilumintu",
           "badge": "contoh desain"
         }
       ]
