@@ -9,12 +9,13 @@ Semua tautan di dalam situs bersifat relatif, jadi berkas ini bisa diunggah ke r
 ## Struktur halaman
 
 - `index.html` — beranda
-- `artikel/index.html` — daftar artikel
-- `artikel/*.html` — satu berkas per artikel
+- `artikel/index.html` — daftar artikel, plus pencarian di peramban
+- `artikel/*.html` — satu berkas per artikel (ada tombol bagikan WhatsApp, Facebook, dan salin tautan)
+- `generator-surat-lamaran.html` — merangkai surat lamaran di peramban; data tidak dikirim ke server
 - `toko.html` — empat produk Lynk.id plus tautan jasa
 - `jasa.html` — jasa website
 - `tentang.html`, `kontak.html`, `kebijakan-privasi.html`
-- `css/styles.css`, `js/nav.js`, `img/`, `favicon.svg`
+- `css/styles.css`, `js/nav.js`, `js/share.js`, `js/search.js`, `js/generator-surat.js`, `js/articles.json`, `img/`, `favicon.svg`
 - `sitemap.xml`, `robots.txt`
 
 Tidak ada buletin atau formulir langganan.
@@ -39,6 +40,7 @@ Tidak perlu menjalankan skrip. Salin satu artikel yang sudah ada, lalu perbarui 
    - `index.html` (bagian Artikel terbaru; taruh yang paling baru di depan)
 5. Tambahkan URL lengkap ke `sitemap.xml`.
 6. Dari 1–2 artikel lama yang temanya dekat, tambahkan tautan ke artikel baru di “Baca juga”.
+7. Tambahkan entri di `js/articles.json` (judul, deskripsi, tanggal, slug) agar pencarian di daftar artikel ikut terbarui.
 
 Tanggal di halaman daftar dan di dalam artikel harus sama.
 
