@@ -1,0 +1,89 @@
+{
+  "_comment": "Tambah proyek baru di groups[].items. Setelah mengubah berkas ini, halaman Semua Link akan merender ulang daftarnya. Field badge dipakai untuk label jujur seperti 'contoh desain'.",
+  "groups": [
+    {
+      "id": "website",
+      "title": "Website",
+      "intro": "Situs yang sudah tayang, termasuk contoh desain.",
+      "tint": "teal",
+      "items": [
+        {
+          "title": "Tips Kerja & CV",
+          "description": "Website panduan CV, surat lamaran, dan website usaha.",
+          "url": "https://yeyenmuhidin.github.io/tips-kerja/"
+        },
+        {
+          "title": "Aruna Tulis",
+          "description": "Contoh desain website untuk usaha batik.",
+          "url": "https://yeyenmuhidin.github.io/Arun-tulis-demo/",
+          "badge": "contoh desain"
+        },
+        {
+          "title": "Sarira Skin",
+          "description": "Contoh desain website untuk merek skincare.",
+          "url": "https://yeyenmuhidin732.wixsite.com/sarira-skin",
+          "badge": "contoh desain"
+        }
+      ]
+    },
+    {
+      "id": "game",
+      "title": "Game",
+      "intro": "Game yang bisa langsung dimainkan di peramban.",
+      "tint": "lilac",
+      "items": [
+        {
+          "title": "Petualangan Nusantara",
+          "description": "Game 3D petualangan di desa, sawah, dan gunung.",
+          "url": "https://yeyenmuhidin.github.io/petualangan-nusantara/"
+        },
+        {
+          "title": "Desa Koin",
+          "description": "Game membangun desa.",
+          "url": "https://yeyenmuhidin.github.io/desa-koin/"
+        }
+      ]
+    },
+    {
+      "id": "toko",
+      "title": "Toko produk digital",
+      "intro": "Pembelian dan pembayaran diproses di Lynk.id, bukan di halaman ini.",
+      "tint": "peach",
+      "items": [
+        {
+          "title": "Toko Lynk.id",
+          "description": "Template CV, undangan, dan produk digital lainnya.",
+          "url": "https://lynk.id/yeyenmuhidin"
+        }
+      ]
+    },
+    {
+      "id": "jasa",
+      "title": "Jasa freelance",
+      "intro": "Pemesanan lewat platform masing-masing.",
+      "tint": "sky",
+      "items": [
+        {
+          "title": "Jasa landing page di Fiverr",
+          "description": "Merancang halaman usaha atau website bisnis yang rapi di ponsel.",
+          "url": "https://www.fiverr.com/yeyenmuhidin/design-a-responsive-landing-page-or-business-website"
+        },
+        {
+          "title": "Jasa perbaikan HTML di Fiverr",
+          "description": "Memperbaiki atau merapikan kode HTML halaman yang sudah ada.",
+          "url": "https://www.fiverr.com/s/yeW9zLz"
+        },
+        {
+          "title": "Profil Guru.com",
+          "description": "Profil jasa freelance di Guru.com.",
+          "url": "https://www.guru.com/freelancers/yeyen-muhidin"
+        },
+        {
+          "title": "Profil Projects.co.id",
+          "description": "Profil jasa freelance di Projects.co.id.",
+          "url": "https://projects.co.id/public/browse_users/view/e87f70/yeyenmuhidin"
+        }
+      ]
+    }
+  ]
+}
