@@ -14,8 +14,9 @@ Semua tautan di dalam situs bersifat relatif, jadi berkas ini bisa diunggah ke r
 - `generator-surat-lamaran.html` — merangkai surat lamaran di peramban; data tidak dikirim ke server
 - `toko.html` — empat produk Lynk.id plus tautan jasa
 - `jasa.html` — jasa website
+- `semua-link.html` — kumpulan tautan website, game, toko, dan jasa
 - `tentang.html`, `kontak.html`, `kebijakan-privasi.html`
-- `css/styles.css`, `js/nav.js`, `js/share.js`, `js/search.js`, `js/generator-surat.js`, `js/articles.json`, `img/`, `favicon.svg`
+- `css/styles.css`, `js/nav.js`, `js/share.js`, `js/search.js`, `js/generator-surat.js`, `js/articles.json`, `js/links.json`, `js/links.js`, `img/`, `favicon.svg`
 - `sitemap.xml`, `robots.txt`
 
 Tidak ada buletin atau formulir langganan.
@@ -43,6 +44,21 @@ Tidak perlu menjalankan skrip. Salin satu artikel yang sudah ada, lalu perbarui 
 7. Tambahkan entri di `js/articles.json` (judul, deskripsi, tanggal, slug) agar pencarian di daftar artikel ikut terbarui.
 
 Tanggal di halaman daftar dan di dalam artikel harus sama.
+
+
+## Cara menambah tautan baru
+
+Daftar di halaman Semua Link diambil dari `js/links.json`. Tambahkan objek baru di `groups` yang sesuai (atau buat kelompok baru), misalnya:
+
+```json
+{
+  "title": "Nama proyek",
+  "description": "Penjelasan singkat.",
+  "url": "https://contoh.tld/proyek"
+}
+```
+
+Jika itu demo konsep, tambahkan `"badge": "contoh desain"`. Jangan menuliskannya sebagai karya klien. Halaman akan merender ulang daftarnya dari berkas itu. Markup kartu di `semua-link.html` adalah cadangan jika JavaScript tidak berjalan; samakan isinya bila memungkinkan.
 
 ## Iklan (AdSense)
 
