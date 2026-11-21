@@ -54,6 +54,11 @@ Jika AdSense sudah disetujui:
 2. Tempel unit iklan resmi Google di dalam `div.ad-slot`.
 3. Perbarui `kebijakan-privasi.html` (tanggal dan bagian cookie/iklan) agar sesuai keadaan baru.
 
+
+## Penghitung pengunjung
+
+Setiap halaman memuat cuplikan Google Analytics 4 (Measurement ID `G-C25Q0B5VDX`) di bagian `<head>` untuk menghitung kunjungan. Jangan menggandakan cuplikan itu. Data di generator surat lamaran tetap hanya diproses di peramban, tidak dikirim ke Analytics. Penjelasan untuk pengunjung ada di `kebijakan-privasi.html`.
+
 ## Unggah
 
 Salin isi folder (termasuk subfolder) ke repositori GitHub `tips-kerja`, atau pakai folder datar `yeyen-site-upload` / arsip zip yang disiapkan bersama situs ini. Jangan unggah folder `shots/`; itu hanya bukti tampilan.
