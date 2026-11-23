@@ -1,0 +1,101 @@
+{
+  "panduan": "Ganti nilai 'link' di setiap produk dengan link affiliate Shopee kamu. Jangan hapus tanda kutip. Biarkan id, nama, ikon, warna, dan deskripsi kecuali kamu ingin mengubahnya. Contoh link: https://s.shopee.co.id/xxxx",
+  "produk": [
+    {
+      "id": "botol-minum",
+      "nama": "Botol Minum & Termos",
+      "ikon": "🍶",
+      "warna": "#FFE0C8",
+      "deskripsi": "Praktis dibawa ke pabrik atau perjalanan. Bisa untuk air dingin atau hangat, supaya tidak perlu sering beli minuman.",
+      "link": "#ISI-LINK-AFFILIATE"
+    },
+    {
+      "id": "sepatu-kerja",
+      "nama": "Sepatu Kerja",
+      "ikon": "👟",
+      "warna": "#F3D9C8",
+      "deskripsi": "Pelindung kaki yang nyaman dipakai seharian. Pilih yang pas di kaki dan sesuai aturan keselamatan di tempat kerja.",
+      "link": "#ISI-LINK-AFFILIATE"
+    },
+    {
+      "id": "tas-ransel",
+      "nama": "Tas & Ransel",
+      "ikon": "🎒",
+      "warna": "#FBE0B8",
+      "deskripsi": "Untuk membawa bekal, seragam, dan barang kerja. Pilih ukuran yang muat kebutuhan harian tanpa terasa berat.",
+      "link": "#ISI-LINK-AFFILIATE"
+    },
+    {
+      "id": "powerbank",
+      "nama": "Powerbank",
+      "ikon": "🔋",
+      "warna": "#F8D5D0",
+      "deskripsi": "Cadangan daya untuk HP selama di pabrik, perjalanan, atau saat listrik padam. Perhatikan kapasitas dan kelengkapan kabelnya.",
+      "link": "#ISI-LINK-AFFILIATE"
+    },
+    {
+      "id": "alat-dapur",
+      "nama": "Alat Dapur",
+      "ikon": "🍴",
+      "warna": "#FFE3B5",
+      "deskripsi": "Perlengkapan masak sederhana untuk rumah: panci, wajan, atau pisau. Berguna untuk memasak bekal sendiri biar lebih hemat.",
+      "link": "#ISI-LINK-AFFILIATE"
+    },
+    {
+      "id": "kotak-bekal",
+      "nama": "Kotak Bekal",
+      "ikon": "🍱",
+      "warna": "#F4DCB8",
+      "deskripsi": "Bawa makanan dari rumah. Pilih yang rapat dan mudah dibersihkan, supaya bekal tetap rapi sampai jam istirahat.",
+      "link": "#ISI-LINK-AFFILIATE"
+    },
+    {
+      "id": "jas-hujan",
+      "nama": "Jas Hujan",
+      "ikon": "🌧️",
+      "warna": "#D9E8F4",
+      "deskripsi": "Menjaga baju tetap kering waktu berangkat atau pulang kerja. Praktis dilipat di tas kalau cuaca mendung.",
+      "link": "#ISI-LINK-AFFILIATE"
+    },
+    {
+      "id": "earphone",
+      "nama": "Earphone",
+      "ikon": "🎧",
+      "warna": "#E6D9F5",
+      "deskripsi": "Untuk menelepon atau mendengarkan audio di waktu istirahat. Cek dulu aturan pabrik sebelum dipakai di area kerja.",
+      "link": "#ISI-LINK-AFFILIATE"
+    },
+    {
+      "id": "senter-lampu",
+      "nama": "Senter & Lampu",
+      "ikon": "🔦",
+      "warna": "#FFF0B8",
+      "deskripsi": "Berguna saat listrik padam, shift malam, atau jalan yang gelap. Pilih yang mudah dipegang dan baterainya awet.",
+      "link": "#ISI-LINK-AFFILIATE"
+    },
+    {
+      "id": "pakaian-harian",
+      "nama": "Kaos Dalam & Pakaian Harian",
+      "ikon": "👕",
+      "warna": "#DCEEE0",
+      "deskripsi": "Pakaian nyaman dipakai di bawah seragam atau di rumah. Utamakan bahan yang adem dan mudah dicuci.",
+      "link": "#ISI-LINK-AFFILIATE"
+    },
+    {
+      "id": "sandal-rumah",
+      "nama": "Sandal Rumah",
+      "ikon": "🩴",
+      "warna": "#F8DCC8",
+      "deskripsi": "Untuk dipakai di rumah setelah pulang kerja. Pilih yang empuk di kaki dan tidak licin di lantai.",
+      "link": "#ISI-LINK-AFFILIATE"
+    },
+    {
+      "id": "kotak-p3k",
+      "nama": "Kotak P3K & Kesehatan",
+      "ikon": "🩹",
+      "warna": "#F8D4DC",
+      "deskripsi": "Perlengkapan pertolongan pertama untuk keluarga di rumah: plester, kasa, atau antiseptik. Simpan di tempat yang mudah dijangkau.",
+      "link": "#ISI-LINK-AFFILIATE"
+    }
+  ]
+}
