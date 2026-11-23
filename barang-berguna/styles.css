@@ -399,6 +399,20 @@ h2 {
   font-size: 1.7rem;
   line-height: 1;
   background: var(--card-accent, var(--paper-2));
+  overflow: hidden;
+}
+
+.media-photo {
+  width: 100%;
+  aspect-ratio: 1;
+  background: var(--paper-2);
+}
+
+.media-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .card h3 {

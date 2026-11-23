@@ -14,6 +14,15 @@
     return value.startsWith("http://") || value.startsWith("https://");
   };
 
+  const isLocalImage = (value) => {
+    const image = String(value || "").trim();
+    if (!image) return false;
+    if (image.includes("..") || image.includes("\\") || image.includes(":") || image.startsWith("/")) {
+      return false;
+    }
+    return /^img\/[A-Za-z0-9._-]+\.(webp|jpg|jpeg|png)$/i.test(image);
+  };
+
   const escapeHtml = (value) =>
     String(value)
       .replaceAll("&", "&amp;")
@@ -21,6 +30,19 @@
       .replaceAll(">", "&gt;")
       .replaceAll('"', "&quot;")
       .replaceAll("'", "&#39;");
+
+  const renderMedia = (item, name, accent) => {
+    const rawImage = String(item.image || "").trim();
+    if (isLocalImage(rawImage)) {
+      const src = escapeHtml(rawImage);
+      return `<div class="media media-photo" style="--card-accent: ${accent}">
+            <img src="${src}" alt="${name}" width="400" height="400" loading="lazy" decoding="async">
+          </div>`;
+    }
+
+    const icon = escapeHtml(item.ikon || "🛒");
+    return `<div class="media" style="--card-accent: ${accent}" aria-hidden="true">${icon}</div>`;
+  };
 
   const render = (items) => {
     if (!Array.isArray(items) || items.length === 0) {
@@ -32,7 +54,6 @@
       .map((item) => {
         const name = escapeHtml(item.nama || "Produk");
         const desc = escapeHtml(item.deskripsi || "");
-        const icon = escapeHtml(item.ikon || "🛒");
         const accent = escapeHtml(item.warna || "#FFE4D6");
         const rawLink = String(item.link || "#ISI-LINK-AFFILIATE").trim();
         const filled = isFilled(rawLink);
@@ -43,7 +64,7 @@
 
         return `
           <article class="card" id="${escapeHtml(item.id || "")}">
-            <div class="media" style="--card-accent: ${accent}" aria-hidden="true">${icon}</div>
+            ${renderMedia(item, name, accent)}
             <h3>${name}</h3>
             <p>${desc}</p>
             <footer>

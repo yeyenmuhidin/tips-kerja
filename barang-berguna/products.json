@@ -2,6 +2,51 @@
   "panduan": "Ganti nilai 'link' di setiap produk dengan link affiliate Shopee kamu. Jangan hapus tanda kutip. Biarkan id, nama, ikon, warna, dan deskripsi kecuali kamu ingin mengubahnya. Contoh link: https://s.shopee.co.id/xxxx",
   "produk": [
     {
+      "id": "payung-lipat",
+      "nama": "Payung Lipat Anti UV",
+      "ikon": "☂️",
+      "warna": "#D4E5F7",
+      "image": "img/payung-lipat.webp",
+      "deskripsi": "Payung lipat untuk panas atau hujan. Ringan dan mudah dimasukkan ke tas waktu berangkat kerja atau bepergian. Cek bahan dan ukuran lipatan di Shopee.",
+      "link": "https://s.shopee.co.id/9V3HCWB24O"
+    },
+    {
+      "id": "kipas-mini",
+      "nama": "Kipas Mini Genggam AYRA",
+      "ikon": "🪭",
+      "warna": "#DCEFE8",
+      "image": "img/kipas-mini.webp",
+      "deskripsi": "Kipas portable yang dipegang di tangan, cocok dibawa saat cuaca panas atau perjalanan. Pengisian dayanya lewat kabel Type-C. Cek kelengkapan di Shopee.",
+      "link": "https://s.shopee.co.id/6fj5pKvZiR"
+    },
+    {
+      "id": "lip-balm-hanasui",
+      "nama": "Hanasui Butter Balm",
+      "ikon": "💄",
+      "warna": "#F6D6E6",
+      "image": "img/lip-balm-hanasui.webp",
+      "deskripsi": "Lip balm berwarna dari Hanasui untuk melembabkan bibir. Ada beberapa pilihan warna. Bandingkan varian dan isi kemasan langsung di Shopee.",
+      "link": "https://s.shopee.co.id/40iKeSQMJX"
+    },
+    {
+      "id": "blouse-polkadot",
+      "nama": "Blouse Motif Polkadot",
+      "ikon": "👚",
+      "warna": "#F3E0D2",
+      "image": "img/blouse-polkadot.webp",
+      "deskripsi": "Atasan blouse wanita bermotif polkadot, untuk dipakai sehari-hari. Cek ukuran, bahan, dan foto di Shopee supaya sesuai.",
+      "link": "https://s.shopee.co.id/4VebFRvy7M"
+    },
+    {
+      "id": "parfum-mykonos",
+      "nama": "Parfum Decant Mykonos",
+      "ikon": "🧴",
+      "warna": "#E8DFF3",
+      "image": "img/parfum-mykonos.webp",
+      "deskripsi": "Parfum Mykonos dalam kemasan decant kecil, dengan pilihan isi 3 ml, 5 ml, atau 10 ml dan berbagai aroma. Cek varian dan ukuran di Shopee sebelum membeli.",
+      "link": "https://s.shopee.co.id/1qdq4hFcDA"
+    },
+    {
       "id": "botol-minum",
       "nama": "Botol Minum & Termos",
       "ikon": "🍶",
