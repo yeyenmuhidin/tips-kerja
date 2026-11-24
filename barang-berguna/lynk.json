@@ -1,0 +1,85 @@
+{
+  "panduan": "Produk digital buatan Yeyen Muhidin. Harga sesuai yang tertera di Lynk.id. Tombol membuka halaman Lynk di tab baru.",
+  "produk": [
+    {
+      "id": "lynk-55kw9kmqm02z",
+      "nama": "20 Template Promo UMKM",
+      "ikon": "📣",
+      "warna": "#F8E0CC",
+      "image": "img/lynk-55kw9kmqm02z.webp",
+      "deskripsi": "File digital: 20 template promo siap unggah ke Instagram, ukuran 1080×1080.",
+      "harga": 25000,
+      "link": "https://lynk.id/yeyenmuhidin/55kw9kmqm02z"
+    },
+    {
+      "id": "lynk-jvrp8dp8ykk1",
+      "nama": "Paket 8 Template CV + 3 Surat Lamaran",
+      "ikon": "📄",
+      "warna": "#DCE8F6",
+      "image": "img/lynk-jvrp8dp8ykk1.webp",
+      "deskripsi": "File digital: 8 template CV plus 3 surat lamaran kerja, format Word dan PDF.",
+      "harga": 15000,
+      "link": "https://lynk.id/yeyenmuhidin/jvrp8dp8ykk1"
+    },
+    {
+      "id": "lynk-zp8yrr80pxzr",
+      "nama": "Paket 10 Template Undangan Pernikahan Digital",
+      "ikon": "💌",
+      "warna": "#F6DDE6",
+      "image": "img/lynk-zp8yrr80pxzr.webp",
+      "deskripsi": "File digital: 10 template undangan pernikahan digital, format PNG dan PPTX.",
+      "harga": 20000,
+      "link": "https://lynk.id/yeyenmuhidin/zp8yrr80pxzr"
+    },
+    {
+      "id": "lynk-oxzvznngoknp",
+      "nama": "Paket 5 Template Website Portofolio",
+      "ikon": "💻",
+      "warna": "#DDEFE6",
+      "image": "img/lynk-oxzvznngoknp.webp",
+      "deskripsi": "File digital: 5 template website portofolio, HTML siap pakai.",
+      "harga": 20000,
+      "link": "https://lynk.id/yeyenmuhidin/oxzvznngoknp"
+    },
+    {
+      "id": "lynk-4kq0zqzmmnm2",
+      "nama": "Paket Template Feed Instagram UMKM",
+      "ikon": "📱",
+      "warna": "#F7E7C8",
+      "image": "img/lynk-4kq0zqzmmnm2.webp",
+      "deskripsi": "File digital: 15 desain feed Instagram untuk UMKM, siap diedit.",
+      "harga": 20000,
+      "link": "https://lynk.id/yeyenmuhidin/4kq0zqzmmnm2"
+    },
+    {
+      "id": "lynk-6zko68le8n1g",
+      "nama": "Cara Jualan Online untuk Pemula (Ebook)",
+      "ikon": "📘",
+      "warna": "#E4DFF3",
+      "image": "img/lynk-6zko68le8n1g.webp",
+      "deskripsi": "Ebook panduan praktis jualan online untuk pemula. File digital, dibeli di Lynk.id.",
+      "harga": 20000,
+      "link": "https://lynk.id/yeyenmuhidin/6zko68le8n1g"
+    },
+    {
+      "id": "lynk-enrj6ljglr5v",
+      "nama": "Buku Mewarnai Anak TK",
+      "ikon": "🎨",
+      "warna": "#F8E6C9",
+      "image": "img/lynk-enrj6ljglr5v.webp",
+      "deskripsi": "File digital: 30 halaman mewarnai untuk anak TK, siap cetak ukuran A4.",
+      "harga": 15000,
+      "link": "https://lynk.id/yeyenmuhidin/enrj6ljglr5v"
+    },
+    {
+      "id": "lynk-oqvw8kokl7lq",
+      "nama": "Paket Lembar Kerja Belajar Anak TK/SD",
+      "ikon": "✏️",
+      "warna": "#DCEFE3",
+      "image": "img/lynk-oqvw8kokl7lq.webp",
+      "deskripsi": "File digital: 30 lembar kerja belajar anak TK/SD, siap cetak.",
+      "harga": 15000,
+      "link": "https://lynk.id/yeyenmuhidin/oqvw8kokl7lq"
+    }
+  ]
+}

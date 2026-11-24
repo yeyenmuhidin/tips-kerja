@@ -1,5 +1,4 @@
 (() => {
-  const list = document.getElementById("daftar-produk");
   const year = document.getElementById("tahun");
   if (year) year.textContent = String(new Date().getFullYear());
 
@@ -31,6 +30,12 @@
       .replaceAll('"', "&quot;")
       .replaceAll("'", "&#39;");
 
+  const formatRupiah = (value) => {
+    const amount = Number(value);
+    if (!Number.isFinite(amount)) return "";
+    return `Rp${amount.toLocaleString("id-ID")}`;
+  };
+
   const renderMedia = (item, name, accent) => {
     const rawImage = String(item.image || "").trim();
     if (isLocalImage(rawImage)) {
@@ -44,9 +49,11 @@
     return `<div class="media" style="--card-accent: ${accent}" aria-hidden="true">${icon}</div>`;
   };
 
-  const render = (items) => {
+  const renderList = (list, items, options) => {
+    if (!list) return;
+
     if (!Array.isArray(items) || items.length === 0) {
-      list.innerHTML = '<p class="error">Daftar produk masih kosong. Isi file products.json.</p>';
+      list.innerHTML = `<p class="error">${escapeHtml(options.emptyMessage)}</p>`;
       return;
     }
 
@@ -55,12 +62,14 @@
         const name = escapeHtml(item.nama || "Produk");
         const desc = escapeHtml(item.deskripsi || "");
         const accent = escapeHtml(item.warna || "#FFE4D6");
-        const rawLink = String(item.link || "#ISI-LINK-AFFILIATE").trim();
+        const rawLink = String(item.link || options.placeholderLink || "#").trim();
         const filled = isFilled(rawLink);
-        const href = escapeHtml(rawLink || "#ISI-LINK-AFFILIATE");
-        const rel = filled ? ' rel="sponsored nofollow noopener noreferrer"' : "";
+        const href = escapeHtml(rawLink || options.placeholderLink || "#");
+        const rel = filled ? ` rel="${options.rel}"` : "";
         const target = filled ? ' target="_blank"' : "";
         const pendingLabel = filled ? "" : " (link belum diisi)";
+        const priceText = options.showPrice ? formatRupiah(item.harga) : "";
+        const price = priceText ? `<p class="price">${escapeHtml(priceText)}</p>` : "";
 
         return `
           <article class="card" id="${escapeHtml(item.id || "")}">
@@ -68,8 +77,9 @@
             <h3>${name}</h3>
             <p>${desc}</p>
             <footer>
+              ${price}
               <a class="btn" href="${href}"${rel}${target}>
-                Cek di Shopee${arrow}
+                ${escapeHtml(options.buttonLabel)}${arrow}
                 <span class="visually-hidden">: ${name}${pendingLabel}</span>
               </a>
             </footer>
@@ -80,14 +90,36 @@
     list.innerHTML = html;
   };
 
-  fetch("products.json", { cache: "no-cache" })
-    .then((res) => {
-      if (!res.ok) throw new Error("Gagal memuat products.json");
-      return res.json();
-    })
-    .then((data) => render(data.produk))
-    .catch(() => {
-      list.innerHTML =
-        '<p class="error">Gagal memuat daftar produk. Buka halaman ini lewat server lokal (lihat README), jangan langsung klik file HTML-nya.</p>';
-    });
+  const loadList = (url, listId, options) => {
+    const list = document.getElementById(listId);
+    if (!list) return;
+
+    fetch(url, { cache: "no-cache" })
+      .then((res) => {
+        if (!res.ok) throw new Error(`Gagal memuat ${url}`);
+        return res.json();
+      })
+      .then((data) => renderList(list, data.produk, options))
+      .catch(() => {
+        list.innerHTML = `<p class="error">${escapeHtml(options.errorMessage)}</p>`;
+      });
+  };
+
+  loadList("lynk.json", "daftar-digital", {
+    buttonLabel: "Lihat di Lynk",
+    showPrice: true,
+    rel: "noopener noreferrer",
+    placeholderLink: "#",
+    emptyMessage: "Daftar produk digital masih kosong. Isi file lynk.json.",
+    errorMessage: "Gagal memuat daftar produk digital. Buka halaman ini lewat server lokal (lihat README), jangan langsung klik file HTML-nya.",
+  });
+
+  loadList("products.json", "daftar-produk", {
+    buttonLabel: "Cek di Shopee",
+    showPrice: false,
+    rel: "sponsored nofollow noopener noreferrer",
+    placeholderLink: "#ISI-LINK-AFFILIATE",
+    emptyMessage: "Daftar produk masih kosong. Isi file products.json.",
+    errorMessage: "Gagal memuat daftar produk. Buka halaman ini lewat server lokal (lihat README), jangan langsung klik file HTML-nya.",
+  });
 })();
