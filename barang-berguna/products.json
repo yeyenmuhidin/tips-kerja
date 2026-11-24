@@ -2,6 +2,69 @@
   "panduan": "Ganti nilai 'link' di setiap produk dengan link affiliate Shopee kamu. Jangan hapus tanda kutip. Biarkan id, nama, ikon, warna, dan deskripsi kecuali kamu ingin mengubahnya. Contoh link: https://s.shopee.co.id/xxxx",
   "produk": [
     {
+      "id": "blouse-motif-bunga",
+      "nama": "KH Leya Blouse Motif Bunga",
+      "ikon": "👚",
+      "warna": "#F6E6EE",
+      "image": "img/blouse-motif-bunga.webp",
+      "deskripsi": "Atasan blouse wanita bermotif bunga dari KH Leya, potongan batwing oversize. Cek ukuran, bahan, dan foto di Shopee supaya sesuai.",
+      "link": "https://s.shopee.co.id/2gCy2EJ4G9"
+    },
+    {
+      "id": "pashmina-kaos-rayon",
+      "nama": "Pashmina Kaos Rayon 180x75",
+      "ikon": "🧣",
+      "warna": "#EDE6F4",
+      "image": "img/pashmina-kaos-rayon.webp",
+      "deskripsi": "Hijab pashmina berbahan kaos rayon, ukuran 180 x 75 cm. Cek warna dan bahan di Shopee supaya sesuai.",
+      "link": "https://s.shopee.co.id/80EUOBiLn3"
+    },
+    {
+      "id": "boneka-fluffy-gantungan",
+      "nama": "Boneka Fluffy Gantungan",
+      "ikon": "🧸",
+      "warna": "#FDE8F0",
+      "image": "img/boneka-fluffy-gantungan.webp",
+      "deskripsi": "Boneka fluffy kecil dengan rantai, bisa dipakai sebagai gantungan HP atau tas. Cek warna dan ukuran di Shopee.",
+      "link": "https://s.shopee.co.id/114k3M3AlJ"
+    },
+    {
+      "id": "kaos-motif-kupu",
+      "nama": "Kaos Oversize Motif Kupu-Kupu",
+      "ikon": "👕",
+      "warna": "#F2EEE6",
+      "image": "img/kaos-motif-kupu.webp",
+      "deskripsi": "Kaos pendek berbahan katun, motif kupu-kupu dan tulisan, potongan oversize unisex. Cek ukuran dan bahan di Shopee.",
+      "link": "https://s.shopee.co.id/2qWOEwqC6U"
+    },
+    {
+      "id": "panci-steamer-2-susun",
+      "nama": "Panci Steamer Stainless 2 Susun",
+      "ikon": "🍲",
+      "warna": "#E4EEF2",
+      "image": "img/panci-steamer-2-susun.webp",
+      "deskripsi": "Panci kukus stainless 2 susun, bisa untuk siomay atau makanan lain. Cek ukuran dan kelengkapan di Shopee.",
+      "link": "https://s.shopee.co.id/qlJrJ68x6"
+    },
+    {
+      "id": "aruni-blus-wanita",
+      "nama": "Aruni Blus Wanita",
+      "ikon": "👚",
+      "warna": "#E8F0EA",
+      "image": "img/aruni-blus-wanita.webp",
+      "deskripsi": "Blus wanita dari Aruni, berbahan katun dengan potongan gaya Korea. Cek ukuran, bahan, dan foto di Shopee supaya sesuai.",
+      "link": "https://s.shopee.co.id/2BGhRpHfYO"
+    },
+    {
+      "id": "set-kondangan-3in1",
+      "nama": "Set Baju Kondangan 3in1",
+      "ikon": "👗",
+      "warna": "#F4E6D8",
+      "image": "img/set-kondangan-3in1.webp",
+      "deskripsi": "Set baju kondangan 3in1: tunik, rok tutu, dan pashmina. Cek ukuran, warna, dan isi paket di Shopee supaya sesuai.",
+      "link": "https://s.shopee.co.id/3B9EdhhEYS"
+    },
+    {
       "id": "payung-lipat",
       "nama": "Payung Lipat Anti UV",
       "ikon": "☂️",
