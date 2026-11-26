@@ -54,6 +54,13 @@
     return /^img\/[A-Za-z0-9._-]+\.(webp|jpg|jpeg|png)$/i.test(image);
   };
 
+  const isShopeeCdnImage = (value) => {
+    const image = String(value || "").trim();
+    return /^https:\/\/down-[a-z0-9-]+\.img\.susercontent\.com\/file\/[A-Za-z0-9._-]+$/i.test(image);
+  };
+
+  const isProductImage = (value) => isLocalImage(value) || isShopeeCdnImage(value);
+
   const escapeHtml = (value) =>
     String(value)
       .replaceAll("&", "&amp;")
@@ -79,8 +86,11 @@
   };
 
   const inferCategory = (item) => {
-    const explicit = String(item.kategori || "").trim();
-    if (explicit && CATEGORY_IDS.has(explicit)) return explicit;
+    if (Object.prototype.hasOwnProperty.call(item, "kategori")) {
+      const explicit = String(item.kategori || "").trim();
+      if (explicit && CATEGORY_IDS.has(explicit)) return explicit;
+      return "";
+    }
     const id = String(item.id || "").trim();
     if (CATEGORY_IDS.has(id)) return id;
     const haystack = `${item.id || ""} ${item.nama || ""} ${item.deskripsi || ""}`.toLowerCase();
@@ -92,10 +102,10 @@
 
   const renderMedia = (item, name, accent, options) => {
     const rawImage = String(item.image || "").trim();
-    if (isLocalImage(rawImage)) {
+    if (isProductImage(rawImage)) {
       const src = escapeHtml(rawImage);
       const priority = options && options.priority ? ' fetchpriority="high" loading="eager"' : ' loading="lazy"';
-      return `<img class="media media-photo" src="${src}" alt="${name}" width="400" height="300"${priority} decoding="async">`;
+      return `<img class="media media-photo" src="${src}" alt="${name}" width="400" height="300"${priority} decoding="async" referrerpolicy="no-referrer">`;
     }
 
     const icon = escapeHtml(item.ikon || "🛒");
@@ -249,7 +259,7 @@
 
   const renderFeatured = () => {
     if (!featuredRoot) return;
-    const featured = state.items.filter((item) => isLocalImage(item.image) && isFilled(item.link));
+    const featured = state.items.filter((item) => isProductImage(item.image) && isFilled(item.link));
     if (featured.length === 0) {
       featuredRoot.innerHTML = `<p class="error">Belum ada produk unggulan.</p>`;
       return;

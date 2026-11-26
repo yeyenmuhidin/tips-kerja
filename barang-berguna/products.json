@@ -2,6 +2,206 @@
   "panduan": "Ganti nilai 'link' di setiap produk dengan link affiliate Shopee kamu. Jangan hapus tanda kutip. Biarkan id, nama, ikon, warna, dan deskripsi kecuali kamu ingin mengubahnya. Contoh link: https://s.shopee.co.id/xxxx",
   "produk": [
     {
+      "id": "paket-ringlight-tripod",
+      "nama": "Paket Komplit Ringlight 26cm + Tripod 2,1m",
+      "ikon": "💡",
+      "warna": "#FFF0B8",
+      "kategori": "senter-lampu",
+      "deskripsi": "Paket lampu ring light 26 cm dengan tripod 2,1 meter, untuk rias atau vlog. Cek kelengkapan, tinggi tripod, dan foto di Shopee supaya sesuai.",
+      "image": "https://down-id.img.susercontent.com/file/c1ef8a86f54bcece9830d262794ac740",
+      "link": "https://s.shopee.co.id/114ns1GHyi"
+    },
+    {
+      "id": "volant-d11-kamera-vlog",
+      "nama": "Volant D11 Kamera Vlog Handheld + Tripod",
+      "ikon": "📷",
+      "warna": "#E8EEF6",
+      "kategori": "",
+      "deskripsi": "Kamera vlog genggam Volant D11 dengan layar TFT 2 inci dan lensa wide angle 120°, plus tripod. Cek isi paket, kualitas video, dan ulasan di Shopee sebelum beli.",
+      "image": "https://down-id.img.susercontent.com/file/id-11134207-81ztq-muhjjqfi8003c7",
+      "link": "https://s.shopee.co.id/gRxTYMioc"
+    },
+    {
+      "id": "goojodoq-j237-headphones",
+      "nama": "GOOJODOQ J237 Headphones Bluetooth 5.3",
+      "ikon": "🎧",
+      "warna": "#E6D9F5",
+      "kategori": "earphone",
+      "deskripsi": "Headphone Bluetooth 5.3 GOOJODOQ J237. Cek mode koneksi, kenyamanan earcup, dan kelengkapan di halaman Shopee supaya sesuai kebutuhan.",
+      "image": "https://down-id.img.susercontent.com/file/id-11134207-81ztp-mrr61f4st1c0b4",
+      "link": "https://s.shopee.co.id/AUvtBf6kja"
+    },
+    {
+      "id": "manu-m6-headphone",
+      "nama": "MANU M6 Headphone Bluetooth 5.3",
+      "ikon": "🎧",
+      "warna": "#E6D9F5",
+      "kategori": "earphone",
+      "deskripsi": "Headphone over-ear MANU M6, Bluetooth 5.3, bisa nirkabel atau kabel, ada mikrofon. Cek klaim garansi 1 tahun, isi paket, dan foto di Shopee.",
+      "image": "https://down-id.img.susercontent.com/file/id-11134207-7ra0s-mdlhrjnt1jf28d",
+      "link": "https://s.shopee.co.id/20xL43xOrq"
+    },
+    {
+      "id": "tuge-headset-tws",
+      "nama": "TUGE Headset Bluetooth 5.3 TWS",
+      "ikon": "🎧",
+      "warna": "#E6D9F5",
+      "kategori": "earphone",
+      "deskripsi": "Earphone TWS TUGE Bluetooth 5.3 untuk ponsel. Cek kecocokan dengan HP, daya tahan baterai, dan kelengkapan di Shopee sebelum beli.",
+      "image": "https://down-id.img.susercontent.com/file/id-11134207-81ztf-muojjn4eeps441",
+      "link": "https://s.shopee.co.id/8VAoo1uFYk"
+    },
+    {
+      "id": "huawei-nova-16s",
+      "nama": "Huawei Nova 16s / 16s Pro Series",
+      "ikon": "📱",
+      "warna": "#E4EDF7",
+      "kategori": "",
+      "deskripsi": "Listing smartphone Huawei Nova 16s / 16s Pro Series. Varian memori, jaringan, dan klaim garansi resmi bisa berbeda; cek seller, isi kotak, dan syarat garansi di Shopee sebelum beli.",
+      "image": "https://down-id.img.susercontent.com/file/id-11134207-81ztf-muegl9hmn5zb87",
+      "link": "https://s.shopee.co.id/6L6KE6BK6j"
+    },
+    {
+      "id": "xiaomi-redmi-note-15-pro-plus",
+      "nama": "Xiaomi Redmi Note 15 Pro Plus 5G",
+      "ikon": "📱",
+      "warna": "#E4EDF7",
+      "kategori": "",
+      "deskripsi": "Listing smartphone Xiaomi Redmi Note 15 Pro Plus 5G dengan klaim original dan garansi resmi. Cek seller, varian, isi kotak, dan syarat garansi di Shopee sebelum beli.",
+      "image": "https://down-id.img.susercontent.com/file/id-11134207-8224o-ml39eli4tqmda3",
+      "link": "https://s.shopee.co.id/2Vtbf4kgaw"
+    },
+    {
+      "id": "xiaomi-note-17-5g",
+      "nama": "Xiaomi Note 17 5G",
+      "ikon": "📱",
+      "warna": "#E4EDF7",
+      "kategori": "",
+      "deskripsi": "Listing smartphone Xiaomi Note 17 5G (varian 6/128GB atau 8/256GB menurut judul toko). Cek keaslian, seller, dan klaim garansi resmi di Shopee sebelum beli.",
+      "image": "https://down-id.img.susercontent.com/file/id-11134207-81ztg-msp3qokh4ydh8a",
+      "link": "https://s.shopee.co.id/1qdursqodc"
+    },
+    {
+      "id": "set-pisau-dapur-6in1",
+      "nama": "Set Pisau Dapur 6 in 1",
+      "ikon": "🍴",
+      "warna": "#FFE3B5",
+      "kategori": "alat-dapur",
+      "deskripsi": "Set pisau dapur 6 in 1, termasuk pengupas, talenan, dan gunting menurut judul listing. Cek isi paket, bahan, dan foto di Shopee supaya sesuai.",
+      "image": "https://down-id.img.susercontent.com/file/sg-11134201-8257v-mrnbhx065jidc1",
+      "link": "https://s.shopee.co.id/AUvtBuYaLB"
+    },
+    {
+      "id": "wajan-wok-honeycomb",
+      "nama": "Wajan Wok Honeycomb Besi Nitridasi",
+      "ikon": "🍴",
+      "warna": "#FFE3B5",
+      "kategori": "alat-dapur",
+      "deskripsi": "Wajan wok honeycomb besi nitridasi, dua gagang, ukuran 22–34 cm menurut listing. Cek ukuran yang dikirim, kecocokan kompor, dan foto di Shopee.",
+      "image": "https://down-id.img.susercontent.com/file/sg-11134201-82599-msmh7e7e2xhga7",
+      "link": "https://s.shopee.co.id/4LLFqbDfWd"
+    },
+    {
+      "id": "rak-dinding-tv-minimalis",
+      "nama": "Rak Dinding TV Minimalis Fullset",
+      "ikon": "📺",
+      "warna": "#EEE8DE",
+      "kategori": "",
+      "deskripsi": "Rak dinding TV minimalis fullset dengan rak samping kanan-kiri. Ukuran di judul sekitar P120 × L16–20 × T85 cm; cek ukuran, bahan, dan isi paket di Shopee.",
+      "image": "https://down-id.img.susercontent.com/file/id-11134207-822wk-mpd4w74x35lbae",
+      "link": "https://s.shopee.co.id/9075PDzi3I"
+    },
+    {
+      "id": "pisau-koki-jepang",
+      "nama": "Pisau Koki / Pisau Daging Stainless Steel",
+      "ikon": "🍴",
+      "warna": "#FFE3B5",
+      "kategori": "alat-dapur",
+      "deskripsi": "Pisau dapur stainless steel untuk daging atau sayur, gaya koki Jepang menurut listing. Cek ukuran, bahan gagang, dan foto di Shopee sebelum beli.",
+      "image": "https://down-id.img.susercontent.com/file/sg-11134201-825ai-mqhty23702kiad",
+      "link": "https://s.shopee.co.id/9Kjvnr5nyr"
+    },
+    {
+      "id": "wadah-beras-sikedoo",
+      "nama": "Sikedoo Wadah Beras Minimalis",
+      "ikon": "🍴",
+      "warna": "#FFE3B5",
+      "kategori": "alat-dapur",
+      "deskripsi": "Wadah beras minimalis warna krem merek sikedoo, kapasitas 5 kg atau 10 kg menurut listing, dengan klaim garansi pecah. Cek ukuran, tutup, dan isi paket di Shopee.",
+      "image": "https://down-id.img.susercontent.com/file/id-11134207-81zth-muu9ehaje7etc4",
+      "link": "https://s.shopee.co.id/9KjvnsrnYC"
+    },
+    {
+      "id": "rak-sepatu-4-susun",
+      "nama": "Rak Sepatu 4 Susun Plastik",
+      "ikon": "👟",
+      "warna": "#F3D9C8",
+      "kategori": "",
+      "deskripsi": "Rak sepatu plastik 4 susun warna hitam, portable dan bisa dibongkar pasang menurut listing. Cek ketebalan, ukuran, dan daya tampung di Shopee.",
+      "image": "https://down-id.img.susercontent.com/file/id-11134201-81zto-mte22rgzyhhha2",
+      "link": "https://s.shopee.co.id/4Veg32at9G"
+    },
+    {
+      "id": "panci-set-granite",
+      "nama": "Panci Set Granite 3in1 / 2in1",
+      "ikon": "🍴",
+      "warna": "#FFE3B5",
+      "kategori": "alat-dapur",
+      "deskripsi": "Set panci lapisan granite anti lengket: panci susu 16 cm, frypan 22 cm, dan panci sup 22 cm menurut listing (ada opsi 3in1 atau 2in1). Cek isi paket, kecocokan kompor, dan foto di Shopee.",
+      "image": "https://down-id.img.susercontent.com/file/sg-11134201-825bb-mt9ab934sg0482",
+      "link": "https://s.shopee.co.id/6fjAd36WNA"
+    },
+    {
+      "id": "vwok-pisau-pengupas-3in1",
+      "nama": "VWOK Pisau Pengupas 3-in-1 Gagang Kayu",
+      "ikon": "🍴",
+      "warna": "#FFE3B5",
+      "kategori": "alat-dapur",
+      "deskripsi": "Pisau pengupas 3-in-1 VWOK, gagang kayu dan bilah stainless steel, untuk buah atau sayur. Cek bentuk mata pisau dan foto di Shopee supaya sesuai.",
+      "image": "https://down-id.img.susercontent.com/file/id-11134207-81zte-mrpapjaakvt12c",
+      "link": "https://s.shopee.co.id/50awe0tqA1"
+    },
+    {
+      "id": "set-alat-baking-silikon-5pcs",
+      "nama": "Set Alat Baking Silikon 5 pcs",
+      "ikon": "🍴",
+      "warna": "#FFE3B5",
+      "kategori": "alat-dapur",
+      "deskripsi": "Foto resmi toko menampilkan set alat baking silikon 5 pcs (kocokan, spatula, dan kuas). Judul listing di Shopee bersifat umum; cek foto, isi paket, dan bahan di halaman toko sebelum beli.",
+      "image": "https://down-id.img.susercontent.com/file/ebc9bc66713926a3a0a5cefa3469dbcd",
+      "link": "https://s.shopee.co.id/7KyrQOR0Io"
+    },
+    {
+      "id": "set-toples-bumbu-stainless",
+      "nama": "Set Toples / Kotak Bumbu Stainless Steel",
+      "ikon": "🍴",
+      "warna": "#FFE3B5",
+      "kategori": "alat-dapur",
+      "deskripsi": "Set toples atau kotak bumbu stainless steel untuk garam dan bumbu dapur. Cek jumlah toples, ukuran, dan isi paket di Shopee sebelum beli.",
+      "image": "https://down-id.img.susercontent.com/file/id-11134207-7rbke-m8m0vx17lc0d1a",
+      "link": "https://s.shopee.co.id/60TTq1XMMC"
+    },
+    {
+      "id": "selimut-bulu-3d",
+      "nama": "Selimut Bulu 3 Dimensi Motif 2 Sisi",
+      "ikon": "🛏️",
+      "warna": "#F6E6EE",
+      "kategori": "",
+      "deskripsi": "Selimut bulu motif 3 dimensi, 2 sisi, bahan polyester. Listing menyebut ukuran 100×150 cm / 150×180 cm dan opsi size king; cek ukuran, motif, dan bahan di Shopee sebelum beli.",
+      "image": "https://down-id.img.susercontent.com/file/id-11134201-7r98p-lpfysocjqi6260",
+      "link": "https://s.shopee.co.id/30psGWzuGh"
+    },
+    {
+      "id": "zhyo-blender-jus-450ml",
+      "nama": "ZHYO Blender Jus Elektrik 450ml",
+      "ikon": "🍴",
+      "warna": "#FFE3B5",
+      "kategori": "alat-dapur",
+      "deskripsi": "Blender jus elektrik ZHYO 450 ml, isi ulang USB, klaim 12 pisau, untuk buah atau es. Cek daya, cara pakai, dan kelengkapan di Shopee sebelum beli.",
+      "image": "https://down-id.img.susercontent.com/file/id-11134207-822wk-mphqnyx9ei31f3",
+      "link": "https://s.shopee.co.id/20xL4ktEI8"
+    },
+    {
       "id": "blouse-motif-bunga",
       "nama": "KH Leya Blouse Motif Bunga",
       "ikon": "👚",
