@@ -94,8 +94,12 @@
     const id = String(item.id || "").trim();
     if (CATEGORY_IDS.has(id)) return id;
     const haystack = `${item.id || ""} ${item.nama || ""} ${item.deskripsi || ""}`.toLowerCase();
+    const hasKey = (key) => {
+      const escaped = String(key).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      return new RegExp(`(?:^|[^a-z0-9])${escaped}(?:[^a-z0-9]|$)`).test(haystack);
+    };
     for (const hint of CATEGORY_HINTS) {
-      if (hint.keys.some((key) => haystack.includes(key))) return hint.id;
+      if (hint.keys.some((key) => hasKey(key))) return hint.id;
     }
     return "";
   };
@@ -124,14 +128,15 @@
     const pendingLabel = filled ? "" : " (link belum diisi)";
     const priceText = options.showPrice !== false && hasPrice(item) ? formatRupiah(item.harga) : "";
     const showCekHarga = options.cekHarga && !priceText;
+    const priceNote = priceText || showCekHarga ? `<p class="price-note">harga bisa berubah</p>` : "";
     const price = priceText
-      ? `<p class="price">${escapeHtml(priceText)}</p>`
+      ? `<p class="price">${escapeHtml(priceText)}</p>${priceNote}`
       : showCekHarga
-        ? `<p class="price price-cek">Cek harga</p>`
+        ? `<p class="price price-cek">Cek harga</p>${priceNote}`
         : "";
     const kategori = inferCategory(item);
     const cat = kategori ? `<p class="card-cat">${escapeHtml(categoryLabel(kategori))}</p>` : "";
-    const badge = options.featured ? `<p class="card-badge">Unggulan</p>` : "";
+    const badge = options.featured ? `<p class="card-badge">Pilihan</p>` : "";
     const shareText = filled
       ? `${item.nama || "Produk"} — ${rawLink}`
       : `${item.nama || "Produk"} — https://yeyenmuhidin.github.io/tips-kerja/barang-berguna/`;
@@ -146,7 +151,7 @@
         ${renderMedia(item, name, accent, { priority: options.featured && index === 0 })}
         ${cat}
         <h3>${name}</h3>
-        ${desc ? `<p>${desc}</p>` : ""}
+        ${desc ? `<p class="card-desc">${desc}</p>` : ""}
         <footer>
           ${price}
           <div class="card-actions">
@@ -203,14 +208,14 @@
   const shopRoot = document.getElementById("daftar-produk");
   if (!shopRoot) return;
 
-  const featuredRoot = document.getElementById("daftar-unggulan");
+  const featuredRoot = document.getElementById("daftar-pilihan");
   const categoryRoot = document.getElementById("daftar-kategori");
   const searchForm = document.getElementById("form-cari");
   const searchInput = document.getElementById("cari-produk");
   const resultCount = document.getElementById("hasil-cari");
 
   const shopOptions = {
-    buttonLabel: "Cek di Shopee",
+    buttonLabel: "Beli di Shopee",
     showPrice: true,
     cekHarga: true,
     shareWa: true,
@@ -259,9 +264,11 @@
 
   const renderFeatured = () => {
     if (!featuredRoot) return;
-    const featured = state.items.filter((item) => isProductImage(item.image) && isFilled(item.link));
+    const featured = state.items
+      .filter((item) => item.pilihan === true && isProductImage(item.image) && isFilled(item.link))
+      .slice(0, 4);
     if (featured.length === 0) {
-      featuredRoot.innerHTML = `<p class="error">Belum ada produk unggulan.</p>`;
+      featuredRoot.innerHTML = `<p class="error">Belum ada produk pilihan minggu ini.</p>`;
       return;
     }
     renderList(featuredRoot, featured, { ...shopOptions, featured: true });

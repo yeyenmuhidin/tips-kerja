@@ -1,5 +1,5 @@
 {
-  "panduan": "Ganti nilai 'link' di setiap produk dengan link affiliate Shopee kamu. Jangan hapus tanda kutip. Biarkan id, nama, ikon, warna, dan deskripsi kecuali kamu ingin mengubahnya. Contoh link: https://s.shopee.co.id/xxxx",
+  "panduan": "Ganti nilai 'link' di setiap produk dengan link affiliate Shopee kamu. Jangan hapus tanda kutip. Biarkan id, nama, ikon, warna, dan deskripsi kecuali kamu ingin mengubahnya. Contoh link: https://s.shopee.co.id/xxxx Kolom 'harga' hanya diisi angka rupiah dari data halaman Shopee (bukan tebakan). Kalau kosong, kartu menampilkan 'Cek harga'. Tandai paling banyak 4 produk dengan pilihan: true untuk 'Produk Pilihan Minggu Ini'.",
   "produk": [
     {
       "id": "paket-ringlight-tripod",
@@ -29,7 +29,8 @@
       "kategori": "earphone",
       "deskripsi": "Headphone Bluetooth 5.3 GOOJODOQ J237. Cek mode koneksi, kenyamanan earcup, dan kelengkapan di halaman Shopee supaya sesuai kebutuhan.",
       "image": "https://down-id.img.susercontent.com/file/id-11134207-81ztp-mrr61f4st1c0b4",
-      "link": "https://s.shopee.co.id/AUvtBf6kja"
+      "link": "https://s.shopee.co.id/AUvtBf6kja",
+      "pilihan": true
     },
     {
       "id": "manu-m6-headphone",
@@ -89,7 +90,8 @@
       "kategori": "alat-dapur",
       "deskripsi": "Set pisau dapur 6 in 1, termasuk pengupas, talenan, dan gunting menurut judul listing. Cek isi paket, bahan, dan foto di Shopee supaya sesuai.",
       "image": "https://down-id.img.susercontent.com/file/sg-11134201-8257v-mrnbhx065jidc1",
-      "link": "https://s.shopee.co.id/AUvtBuYaLB"
+      "link": "https://s.shopee.co.id/AUvtBuYaLB",
+      "pilihan": true
     },
     {
       "id": "wajan-wok-honeycomb",
@@ -197,8 +199,8 @@
       "ikon": "🍴",
       "warna": "#FFE3B5",
       "kategori": "alat-dapur",
-      "image": "https://down-id.img.susercontent.com/file/9de2fd7405f0e159d8ad66cfa01c9559",
       "deskripsi": "Blender plastik Miyako BL-102PL kapasitas 1 liter, listing menyebut 3 mangkok. Cek isi paket, daya, dan tipe mangkok di Shopee sebelum beli.",
+      "image": "https://down-id.img.susercontent.com/file/9de2fd7405f0e159d8ad66cfa01c9559",
       "link": "https://s.shopee.co.id/8pnfDIUmvY"
     },
     {
@@ -217,8 +219,8 @@
       "ikon": "🍴",
       "warna": "#FFE3B5",
       "kategori": "alat-dapur",
-      "image": "https://down-id.img.susercontent.com/file/id-11134207-822wu-mmic6z8hn66eda",
       "deskripsi": "Penggiling daging atau food processor ANQI SHOP, pisau warna hijau menurut listing. Cek isi paket, daya, dan cara pakai di Shopee sebelum beli.",
+      "image": "https://down-id.img.susercontent.com/file/id-11134207-822wu-mmic6z8hn66eda",
       "link": "https://s.shopee.co.id/5LDn2u6wkc"
     },
     {
@@ -227,8 +229,8 @@
       "ikon": "🍴",
       "warna": "#FFE3B5",
       "kategori": "alat-dapur",
-      "image": "https://down-id.img.susercontent.com/file/id-11134207-81ztn-mqyu1jacx7gh49",
       "deskripsi": "Blender plastik Philips HR2042/41 3000 Series, kapasitas 1,2 liter menurut listing. Cek keaslian, isi kotak, dan kelengkapan di Shopee sebelum beli.",
+      "image": "https://down-id.img.susercontent.com/file/id-11134207-81ztn-mqyu1jacx7gh49",
       "link": "https://s.shopee.co.id/1CGh7Vrfn"
     },
     {
@@ -236,8 +238,9 @@
       "nama": "KH Leya Blouse Motif Bunga",
       "ikon": "👚",
       "warna": "#F6E6EE",
-      "image": "img/blouse-motif-bunga.webp",
+      "kategori": "pakaian-harian",
       "deskripsi": "Atasan blouse wanita bermotif bunga dari KH Leya, potongan batwing oversize. Cek ukuran, bahan, dan foto di Shopee supaya sesuai.",
+      "image": "img/blouse-motif-bunga.webp",
       "link": "https://s.shopee.co.id/2gCy2EJ4G9"
     },
     {
@@ -245,17 +248,20 @@
       "nama": "Pashmina Kaos Rayon 180x75",
       "ikon": "🧣",
       "warna": "#EDE6F4",
-      "image": "img/pashmina-kaos-rayon.webp",
+      "kategori": "pakaian-harian",
       "deskripsi": "Hijab pashmina berbahan kaos rayon, ukuran 180 x 75 cm. Cek warna dan bahan di Shopee supaya sesuai.",
-      "link": "https://s.shopee.co.id/80EUOBiLn3"
+      "image": "img/pashmina-kaos-rayon.webp",
+      "link": "https://s.shopee.co.id/80EUOBiLn3",
+      "pilihan": true
     },
     {
       "id": "boneka-fluffy-gantungan",
       "nama": "Boneka Fluffy Gantungan",
       "ikon": "🧸",
       "warna": "#FDE8F0",
-      "image": "img/boneka-fluffy-gantungan.webp",
+      "kategori": "",
       "deskripsi": "Boneka fluffy kecil dengan rantai, bisa dipakai sebagai gantungan HP atau tas. Cek warna dan ukuran di Shopee.",
+      "image": "img/boneka-fluffy-gantungan.webp",
       "link": "https://s.shopee.co.id/114k3M3AlJ"
     },
     {
@@ -263,8 +269,9 @@
       "nama": "Kaos Oversize Motif Kupu-Kupu",
       "ikon": "👕",
       "warna": "#F2EEE6",
-      "image": "img/kaos-motif-kupu.webp",
+      "kategori": "pakaian-harian",
       "deskripsi": "Kaos pendek berbahan katun, motif kupu-kupu dan tulisan, potongan oversize unisex. Cek ukuran dan bahan di Shopee.",
+      "image": "img/kaos-motif-kupu.webp",
       "link": "https://s.shopee.co.id/2qWOEwqC6U"
     },
     {
@@ -272,8 +279,9 @@
       "nama": "Panci Steamer Stainless 2 Susun",
       "ikon": "🍲",
       "warna": "#E4EEF2",
-      "image": "img/panci-steamer-2-susun.webp",
+      "kategori": "alat-dapur",
       "deskripsi": "Panci kukus stainless 2 susun, bisa untuk siomay atau makanan lain. Cek ukuran dan kelengkapan di Shopee.",
+      "image": "img/panci-steamer-2-susun.webp",
       "link": "https://s.shopee.co.id/qlJrJ68x6"
     },
     {
@@ -281,8 +289,9 @@
       "nama": "Aruni Blus Wanita",
       "ikon": "👚",
       "warna": "#E8F0EA",
-      "image": "img/aruni-blus-wanita.webp",
+      "kategori": "pakaian-harian",
       "deskripsi": "Blus wanita dari Aruni, berbahan katun dengan potongan gaya Korea. Cek ukuran, bahan, dan foto di Shopee supaya sesuai.",
+      "image": "img/aruni-blus-wanita.webp",
       "link": "https://s.shopee.co.id/2BGhRpHfYO"
     },
     {
@@ -290,8 +299,9 @@
       "nama": "Set Baju Kondangan 3in1",
       "ikon": "👗",
       "warna": "#F4E6D8",
-      "image": "img/set-kondangan-3in1.webp",
+      "kategori": "pakaian-harian",
       "deskripsi": "Set baju kondangan 3in1: tunik, rok tutu, dan pashmina. Cek ukuran, warna, dan isi paket di Shopee supaya sesuai.",
+      "image": "img/set-kondangan-3in1.webp",
       "link": "https://s.shopee.co.id/3B9EdhhEYS"
     },
     {
@@ -299,17 +309,20 @@
       "nama": "Payung Lipat Anti UV",
       "ikon": "☂️",
       "warna": "#D4E5F7",
-      "image": "img/payung-lipat.webp",
+      "kategori": "jas-hujan",
       "deskripsi": "Payung lipat untuk panas atau hujan. Ringan dan mudah dimasukkan ke tas waktu berangkat kerja atau bepergian. Cek bahan dan ukuran lipatan di Shopee.",
-      "link": "https://s.shopee.co.id/9V3HCWB24O"
+      "image": "img/payung-lipat.webp",
+      "link": "https://s.shopee.co.id/9V3HCWB24O",
+      "pilihan": true
     },
     {
       "id": "kipas-mini",
       "nama": "Kipas Mini Genggam AYRA",
       "ikon": "🪭",
       "warna": "#DCEFE8",
-      "image": "img/kipas-mini.webp",
+      "kategori": "",
       "deskripsi": "Kipas portable yang dipegang di tangan, cocok dibawa saat cuaca panas atau perjalanan. Pengisian dayanya lewat kabel Type-C. Cek kelengkapan di Shopee.",
+      "image": "img/kipas-mini.webp",
       "link": "https://s.shopee.co.id/6fj5pKvZiR"
     },
     {
@@ -317,8 +330,9 @@
       "nama": "Hanasui Butter Balm",
       "ikon": "💄",
       "warna": "#F6D6E6",
-      "image": "img/lip-balm-hanasui.webp",
+      "kategori": "",
       "deskripsi": "Lip balm berwarna dari Hanasui untuk melembabkan bibir. Ada beberapa pilihan warna. Bandingkan varian dan isi kemasan langsung di Shopee.",
+      "image": "img/lip-balm-hanasui.webp",
       "link": "https://s.shopee.co.id/40iKeSQMJX"
     },
     {
@@ -326,8 +340,9 @@
       "nama": "Blouse Motif Polkadot",
       "ikon": "👚",
       "warna": "#F3E0D2",
-      "image": "img/blouse-polkadot.webp",
+      "kategori": "pakaian-harian",
       "deskripsi": "Atasan blouse wanita bermotif polkadot, untuk dipakai sehari-hari. Cek ukuran, bahan, dan foto di Shopee supaya sesuai.",
+      "image": "img/blouse-polkadot.webp",
       "link": "https://s.shopee.co.id/4VebFRvy7M"
     },
     {
@@ -335,8 +350,9 @@
       "nama": "Parfum Decant Mykonos",
       "ikon": "🧴",
       "warna": "#E8DFF3",
-      "image": "img/parfum-mykonos.webp",
+      "kategori": "",
       "deskripsi": "Parfum Mykonos dalam kemasan decant kecil, dengan pilihan isi 3 ml, 5 ml, atau 10 ml dan berbagai aroma. Cek varian dan ukuran di Shopee sebelum membeli.",
+      "image": "img/parfum-mykonos.webp",
       "link": "https://s.shopee.co.id/1qdq4hFcDA"
     },
     {
@@ -344,6 +360,7 @@
       "nama": "Botol Minum & Termos",
       "ikon": "🍶",
       "warna": "#FFE0C8",
+      "kategori": "botol-minum",
       "deskripsi": "Praktis dibawa ke pabrik atau perjalanan. Bisa untuk air dingin atau hangat, supaya tidak perlu sering beli minuman.",
       "link": "#ISI-LINK-AFFILIATE"
     },
@@ -352,6 +369,7 @@
       "nama": "Sepatu Kerja",
       "ikon": "👟",
       "warna": "#F3D9C8",
+      "kategori": "sepatu-kerja",
       "deskripsi": "Pelindung kaki yang nyaman dipakai seharian. Pilih yang pas di kaki dan sesuai aturan keselamatan di tempat kerja.",
       "link": "#ISI-LINK-AFFILIATE"
     },
@@ -360,6 +378,7 @@
       "nama": "Tas & Ransel",
       "ikon": "🎒",
       "warna": "#FBE0B8",
+      "kategori": "tas-ransel",
       "deskripsi": "Untuk membawa bekal, seragam, dan barang kerja. Pilih ukuran yang muat kebutuhan harian tanpa terasa berat.",
       "link": "#ISI-LINK-AFFILIATE"
     },
@@ -368,6 +387,7 @@
       "nama": "Powerbank",
       "ikon": "🔋",
       "warna": "#F8D5D0",
+      "kategori": "powerbank",
       "deskripsi": "Cadangan daya untuk HP selama di pabrik, perjalanan, atau saat listrik padam. Perhatikan kapasitas dan kelengkapan kabelnya.",
       "link": "#ISI-LINK-AFFILIATE"
     },
@@ -376,6 +396,7 @@
       "nama": "Alat Dapur",
       "ikon": "🍴",
       "warna": "#FFE3B5",
+      "kategori": "alat-dapur",
       "deskripsi": "Perlengkapan masak sederhana untuk rumah: panci, wajan, atau pisau. Berguna untuk memasak bekal sendiri biar lebih hemat.",
       "link": "#ISI-LINK-AFFILIATE"
     },
@@ -384,6 +405,7 @@
       "nama": "Kotak Bekal",
       "ikon": "🍱",
       "warna": "#F4DCB8",
+      "kategori": "kotak-bekal",
       "deskripsi": "Bawa makanan dari rumah. Pilih yang rapat dan mudah dibersihkan, supaya bekal tetap rapi sampai jam istirahat.",
       "link": "#ISI-LINK-AFFILIATE"
     },
@@ -392,6 +414,7 @@
       "nama": "Jas Hujan",
       "ikon": "🌧️",
       "warna": "#D9E8F4",
+      "kategori": "jas-hujan",
       "deskripsi": "Menjaga baju tetap kering waktu berangkat atau pulang kerja. Praktis dilipat di tas kalau cuaca mendung.",
       "link": "#ISI-LINK-AFFILIATE"
     },
@@ -400,6 +423,7 @@
       "nama": "Earphone",
       "ikon": "🎧",
       "warna": "#E6D9F5",
+      "kategori": "earphone",
       "deskripsi": "Untuk menelepon atau mendengarkan audio di waktu istirahat. Cek dulu aturan pabrik sebelum dipakai di area kerja.",
       "link": "#ISI-LINK-AFFILIATE"
     },
@@ -408,6 +432,7 @@
       "nama": "Senter & Lampu",
       "ikon": "🔦",
       "warna": "#FFF0B8",
+      "kategori": "senter-lampu",
       "deskripsi": "Berguna saat listrik padam, shift malam, atau jalan yang gelap. Pilih yang mudah dipegang dan baterainya awet.",
       "link": "#ISI-LINK-AFFILIATE"
     },
@@ -416,6 +441,7 @@
       "nama": "Kaos Dalam & Pakaian Harian",
       "ikon": "👕",
       "warna": "#DCEEE0",
+      "kategori": "pakaian-harian",
       "deskripsi": "Pakaian nyaman dipakai di bawah seragam atau di rumah. Utamakan bahan yang adem dan mudah dicuci.",
       "link": "#ISI-LINK-AFFILIATE"
     },
@@ -424,6 +450,7 @@
       "nama": "Sandal Rumah",
       "ikon": "🩴",
       "warna": "#F8DCC8",
+      "kategori": "sandal-rumah",
       "deskripsi": "Untuk dipakai di rumah setelah pulang kerja. Pilih yang empuk di kaki dan tidak licin di lantai.",
       "link": "#ISI-LINK-AFFILIATE"
     },
@@ -432,6 +459,7 @@
       "nama": "Kotak P3K & Kesehatan",
       "ikon": "🩹",
       "warna": "#F8D4DC",
+      "kategori": "kotak-p3k",
       "deskripsi": "Perlengkapan pertolongan pertama untuk keluarga di rumah: plester, kasa, atau antiseptik. Simpan di tempat yang mudah dijangkau.",
       "link": "#ISI-LINK-AFFILIATE"
     }
