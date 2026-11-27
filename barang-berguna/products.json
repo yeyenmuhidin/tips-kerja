@@ -2,6 +2,39 @@
   "panduan": "Ganti nilai 'link' di setiap produk dengan link affiliate Shopee kamu. Jangan hapus tanda kutip. Biarkan id, nama, ikon, warna, dan deskripsi kecuali kamu ingin mengubahnya. Contoh link: https://s.shopee.co.id/xxxx Kolom 'harga' hanya diisi angka rupiah dari data halaman Shopee (bukan tebakan). Kalau kosong, kartu menampilkan 'Cek harga'. Tandai paling banyak 4 produk dengan pilihan: true untuk 'Produk Pilihan Minggu Ini'.",
   "produk": [
     {
+      "id": "pengering-pakaian-portabel-lipat",
+      "nama": "Pengering Pakaian Portabel Lipat, Anti Bakteri",
+      "ikon": "👕",
+      "warna": "#E8EEF6",
+      "kategori": "",
+      "deskripsi": "Pengering pakaian portabel yang bisa dilipat, klaim anti bakteri menurut listing. Cek kapasitas, daya, dan ukuran setelah dilipat di Shopee.",
+      "link": "https://s.shopee.co.id/2qWSw5BCjx",
+      "harga": 229999,
+      "image": "https://down-id.img.susercontent.com/file/sg-11134201-7ratr-mac4d7ba5lsz4a"
+    },
+    {
+      "id": "mipanda-chest-strap-hp",
+      "nama": "MiPanda Chest Strap HP Holder Dada untuk GoPro/Action Cam, POV vlog",
+      "ikon": "📷",
+      "warna": "#F3E6D8",
+      "kategori": "",
+      "deskripsi": "Tali dada pemegang HP atau action cam untuk vlog POV. Cek kompatibilitas, bahan, dan kelengkapan di halaman Shopee.",
+      "link": "https://s.shopee.co.id/3qP07w7CSA",
+      "harga": 60900,
+      "image": "https://down-id.img.susercontent.com/file/id-11134207-81ztl-mtbsmccs4w7bb6"
+    },
+    {
+      "id": "philips-hr1552-hand-mixer",
+      "nama": "Hand Mixer Philips HR-1552 7 Speed, free 4 pengaduk",
+      "ikon": "🍴",
+      "warna": "#E8EEF6",
+      "kategori": "alat-dapur",
+      "deskripsi": "Hand mixer Philips HR-1552 7 kecepatan, listing menyebut 4 pengaduk. Cek isi paket, daya, dan garansi di Shopee sebelum beli.",
+      "link": "https://s.shopee.co.id/9pgDGysY1V",
+      "harga": 309000,
+      "image": "https://down-id.img.susercontent.com/file/id-11134201-81ztq-mva7jxlnppftaa"
+    },
+    {
       "id": "penanak-nasi-mini-12l",
       "nama": "Penanak Nasi Mini 1,2L Peralatan Dapur Mesin Masak Rumah Tangga",
       "ikon": "🍴",
