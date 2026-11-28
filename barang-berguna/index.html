@@ -114,14 +114,22 @@
       </section>
 
       <div class="tools-band">
-        <div class="wrap tools-grid">
+        <div class="wrap tools-grid tools-grid-fav">
           <form id="form-cari" class="search-box" role="search" action="#produk">
             <label for="cari-produk">Cari barang</label>
             <input type="search" id="cari-produk" name="q" placeholder="Cari nama atau jenis barang…" autocomplete="off" enterkeyhint="search">
           </form>
-          <p class="cross-link-inline">
-            <a href="digital.html">Produk Digital Buatan Sendiri <span aria-hidden="true">→</span></a>
-          </p>
+          <div class="tools-fav-row">
+            <button type="button" id="btn-favorit" class="fav-filter" aria-pressed="false" aria-controls="daftar-produk">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                <path d="M12 21s-6.72-4.32-9.36-8.16C.48 9.36 2.28 5.4 6.24 5.4c2.04 0 3.42 1.08 4.8 2.76 1.38-1.68 2.76-2.76 4.8-2.76 3.96 0 5.76 3.96 3.6 7.44C18.72 16.68 12 21 12 21z"/>
+              </svg>
+              <span id="fav-filter-label">Favorit saya (0)</span>
+            </button>
+            <p class="cross-link-inline">
+              <a href="digital.html">Produk Digital Buatan Sendiri <span aria-hidden="true">→</span></a>
+            </p>
+          </div>
         </div>
       </div>
 

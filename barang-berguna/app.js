@@ -75,6 +75,44 @@
     return `Rp${amount.toLocaleString("id-ID")}`;
   };
 
+
+  const FAV_KEY = "barangBergunaFavorit";
+
+  const readFavorites = () => {
+    try {
+      const parsed = JSON.parse(localStorage.getItem(FAV_KEY) || "[]");
+      if (!Array.isArray(parsed)) return new Set();
+      return new Set(parsed.filter((id) => typeof id === "string" && id.trim()));
+    } catch {
+      return new Set();
+    }
+  };
+
+  const favorites = readFavorites();
+
+  const persistFavorites = () => {
+    try {
+      localStorage.setItem(FAV_KEY, JSON.stringify([...favorites]));
+    } catch {
+      /* ignore quota / private mode */
+    }
+  };
+
+  const isFav = (id) => favorites.has(id);
+
+  const favButton = (item) => {
+    const id = String(item.id || "").trim();
+    if (!id) return "";
+    const on = isFav(id);
+    const name = escapeHtml(item.nama || "Produk");
+    const label = on ? `Hapus dari favorit: ${name}` : `Simpan ke favorit: ${name}`;
+    return `<button type="button" class="btn-fav${on ? " is-on" : ""}" data-fav-id="${escapeHtml(id)}" aria-pressed="${on ? "true" : "false"}" aria-label="${label}">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M12 21s-6.72-4.32-9.36-8.16C.48 9.36 2.28 5.4 6.24 5.4c2.04 0 3.42 1.08 4.8 2.76 1.38-1.68 2.76-2.76 4.8-2.76 3.96 0 5.76 3.96 3.6 7.44C18.72 16.68 12 21 12 21z"/>
+      </svg>
+    </button>`;
+  };
+
   const hasPrice = (item) => {
     if (item == null || item.harga == null || item.harga === "") return false;
     return Number.isFinite(Number(item.harga));
@@ -148,6 +186,7 @@
     return `
       <article class="card" id="${escapeHtml(item.id || "")}" data-kategori="${escapeHtml(kategori)}">
         ${badge}
+        ${favButton(item)}
         ${renderMedia(item, name, accent, { priority: options.featured && index === 0 })}
         ${cat}
         <h3>${name}</h3>
@@ -226,7 +265,7 @@
     errorMessage: "Gagal memuat daftar produk. Buka halaman ini lewat server lokal (lihat README), jangan langsung klik file HTML-nya.",
   };
 
-  const state = { items: [], query: "", category: "semua" };
+  const state = { items: [], query: "", category: "semua", favoritesOnly: false };
 
   const matchesQuery = (item, query) => {
     if (!query) return true;
@@ -237,6 +276,7 @@
   const filteredItems = () => {
     const query = state.query.trim().toLowerCase();
     return state.items.filter((item) => {
+      if (state.favoritesOnly && !isFav(String(item.id || "").trim())) return false;
       if (!matchesQuery(item, query)) return false;
       if (state.category === "semua") return true;
       return inferCategory(item) === state.category;
@@ -245,6 +285,14 @@
 
   const updateResultCount = (visible, total) => {
     if (!resultCount) return;
+    if (state.favoritesOnly) {
+      if (state.query.trim() || state.category !== "semua") {
+        resultCount.textContent = `Menampilkan ${visible} dari ${favorites.size} barang favorit.`;
+      } else {
+        resultCount.textContent = `${favorites.size} barang favorit.`;
+      }
+      return;
+    }
     if (state.query.trim() || state.category !== "semua") {
       resultCount.textContent = `Menampilkan ${visible} dari ${total} rekomendasi.`;
     } else {
@@ -252,14 +300,77 @@
     }
   };
 
+  const productTitle = document.getElementById("judul-produk");
+  const featuredSection = document.getElementById("pilihan");
+  const favFilterBtn = document.getElementById("btn-favorit");
+  const favFilterLabel = document.getElementById("fav-filter-label");
+
+  const updateFavFilterButton = () => {
+    if (favFilterLabel) favFilterLabel.textContent = `Favorit saya (${favorites.size})`;
+    if (favFilterBtn) {
+      favFilterBtn.setAttribute("aria-pressed", state.favoritesOnly ? "true" : "false");
+      favFilterBtn.classList.toggle("is-active", state.favoritesOnly);
+    }
+  };
+
+  const syncHeartButtons = (id) => {
+    const on = isFav(id);
+    const selector = `.btn-fav[data-fav-id="${CSS.escape(id)}"]`;
+    document.querySelectorAll(selector).forEach((btn) => {
+      btn.classList.toggle("is-on", on);
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+      const name = (btn.closest(".card") && btn.closest(".card").querySelector("h3")
+        ? btn.closest(".card").querySelector("h3").textContent
+        : "Produk");
+      btn.setAttribute("aria-label", on ? `Hapus dari favorit: ${name}` : `Simpan ke favorit: ${name}`);
+    });
+  };
+
   const renderShop = () => {
     const visible = filteredItems();
+    if (productTitle) productTitle.textContent = state.favoritesOnly ? "Favorit saya" : "Semua rekomendasi";
+    if (featuredSection) featuredSection.hidden = state.favoritesOnly;
     if (visible.length === 0) {
-      shopRoot.innerHTML = `<p class="error" role="status">Tidak ada produk yang cocok. Coba kata lain atau pilih kategori Semua.</p>`;
+      if (state.favoritesOnly && favorites.size === 0) {
+        shopRoot.innerHTML = `<div class="empty-favorit" role="status">
+          <p class="empty-favorit-title">Belum ada barang favorit.</p>
+          <p>Ketuk ikon hati di kartu produk untuk menyimpannya di sini. Daftar ini tersimpan di HP atau komputer ini saja, tidak perlu masuk akun.</p>
+        </div>`;
+      } else if (state.favoritesOnly) {
+        shopRoot.innerHTML = `<p class="error" role="status">Tidak ada favorit yang cocok. Coba kata lain atau pilih kategori Semua.</p>`;
+      } else {
+        shopRoot.innerHTML = `<p class="error" role="status">Tidak ada produk yang cocok. Coba kata lain atau pilih kategori Semua.</p>`;
+      }
     } else {
       renderList(shopRoot, visible, shopOptions);
     }
     updateResultCount(visible.length, state.items.length);
+  };
+
+  const toggleFavorite = (id) => {
+    if (!id) return;
+    if (favorites.has(id)) favorites.delete(id);
+    else favorites.add(id);
+    persistFavorites();
+    updateFavFilterButton();
+    if (state.favoritesOnly) renderShop();
+    else syncHeartButtons(id);
+  };
+
+  const setFavoritesOnly = (on) => {
+    state.favoritesOnly = Boolean(on);
+    if (state.favoritesOnly) {
+      state.category = "semua";
+      if (categoryRoot) {
+        categoryRoot.querySelectorAll("[data-kategori]").forEach((btn) => {
+          const active = btn.getAttribute("data-kategori") === "semua";
+          btn.classList.toggle("is-active", active);
+          btn.setAttribute("aria-pressed", active ? "true" : "false");
+        });
+      }
+    }
+    updateFavFilterButton();
+    renderShop();
   };
 
   const renderFeatured = () => {
@@ -275,6 +386,8 @@
   };
 
   const setCategory = (id) => {
+    state.favoritesOnly = false;
+    updateFavFilterButton();
     state.category = id || "semua";
     if (!categoryRoot) return;
     categoryRoot.querySelectorAll("[data-kategori]").forEach((btn) => {
@@ -306,6 +419,23 @@
     window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
 
   renderCategories();
+  updateFavFilterButton();
+
+  if (favFilterBtn) {
+    favFilterBtn.addEventListener("click", () => {
+      setFavoritesOnly(!state.favoritesOnly);
+      const products = document.getElementById("produk");
+      if (products) products.scrollIntoView({ behavior: scrollBehavior(), block: "start" });
+    });
+  }
+
+  document.addEventListener("click", (event) => {
+    const btn = event.target.closest(".btn-fav");
+    if (!btn) return;
+    event.preventDefault();
+    event.stopPropagation();
+    toggleFavorite(btn.getAttribute("data-fav-id"));
+  });
 
   if (searchForm) {
     searchForm.addEventListener("submit", (event) => {
