@@ -2,6 +2,36 @@
   "panduan": "Produk digital buatan Yeyen Muhidin. Harga sesuai yang tertera di Lynk.id. Tombol membuka halaman Lynk di tab baru.",
   "produk": [
     {
+      "id": "lynk-171xwkde3ym8",
+      "nama": "Kalender 2027 Siap Cetak",
+      "ikon": "📅",
+      "warna": "#E8F3EC",
+      "image": "https://cdn.lynkid.my.id/products/28-11-2026/1795859112103_9773820.webp",
+      "deskripsi": "File digital: kalender 2027 siap cetak, PDF A4, 12 bulan plus cover, lengkap hari libur nasional.",
+      "harga": 5000,
+      "link": "https://lynk.id/yeyenmuhidin/171xwkde3ym8"
+    },
+    {
+      "id": "lynk-2e9ymzoze8rz",
+      "nama": "Paket Stiker WA Chat Harian",
+      "ikon": "💬",
+      "warna": "#F8E0CC",
+      "image": "https://cdn.lynkid.my.id/products/28-11-2026/1795859156970_6334502.webp",
+      "deskripsi": "File digital: 19 stiker WhatsApp lucu dengan kata-kata sehari-hari, format WebP dan PNG.",
+      "harga": 7000,
+      "link": "https://lynk.id/yeyenmuhidin/2e9ymzoze8rz"
+    },
+    {
+      "id": "lynk-dp7lzdoe0m18",
+      "nama": "Planner Keuangan Bulanan (PDF + Excel)",
+      "ikon": "📒",
+      "warna": "#F7E7C8",
+      "image": "https://cdn.lynkid.my.id/products/28-11-2026/1795859182838_2770064.webp",
+      "deskripsi": "File digital: planner keuangan bulanan, PDF siap cetak plus file Excel dengan rumus otomatis.",
+      "harga": 10000,
+      "link": "https://lynk.id/yeyenmuhidin/dp7lzdoe0m18"
+    },
+    {
       "id": "lynk-55kw9kmqm02z",
       "nama": "20 Template Promo UMKM",
       "ikon": "📣",

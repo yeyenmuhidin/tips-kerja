@@ -59,7 +59,12 @@
     return /^https:\/\/down-[a-z0-9-]+\.img\.susercontent\.com\/file\/[A-Za-z0-9._-]+$/i.test(image);
   };
 
-  const isProductImage = (value) => isLocalImage(value) || isShopeeCdnImage(value);
+  const isLynkCdnImage = (value) => {
+    const image = String(value || "").trim();
+    return /^https:\/\/cdn\.lynkid\.my\.id\/products\/\d{2}-\d{2}-\d{4}\/[A-Za-z0-9._-]+\.(webp|jpg|jpeg|png)$/i.test(image);
+  };
+
+  const isProductImage = (value) => isLocalImage(value) || isShopeeCdnImage(value) || isLynkCdnImage(value);
 
   const escapeHtml = (value) =>
     String(value)
