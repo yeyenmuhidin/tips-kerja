@@ -20,6 +20,12 @@
     { id: "pakaian-harian", nama: "Pakaian harian", ikon: "👕" },
     { id: "sandal-rumah", nama: "Sandal rumah", ikon: "🩴" },
     { id: "kotak-p3k", nama: "Kotak P3K", ikon: "🩹" },
+    { id: "elektronik", nama: "Elektronik", ikon: "📺" },
+    { id: "rumah-tangga", nama: "Rumah tangga", ikon: "🏠" },
+    { id: "perkakas", nama: "Perkakas", ikon: "🔧" },
+    { id: "otomotif", nama: "Otomotif", ikon: "🛵" },
+    { id: "bayi-anak", nama: "Bayi & anak", ikon: "🧸" },
+    { id: "perawatan", nama: "Perawatan", ikon: "✨" },
   ];
 
   const CATEGORY_IDS = new Set(CATEGORIES.map((item) => item.id));
@@ -37,6 +43,12 @@
     { id: "senter-lampu", keys: ["senter", "lampu"] },
     { id: "sandal-rumah", keys: ["sandal"] },
     { id: "kotak-p3k", keys: ["p3k", "kesehatan"] },
+    { id: "elektronik", keys: ["speaker", "soundbar", "smart tv", "televisi"] },
+    { id: "perkakas", keys: ["obeng", "perkakas", "palu", "mesin las", "tool kit"] },
+    { id: "otomotif", keys: ["stoplamp", "parfum mobil"] },
+    { id: "bayi-anak", keys: ["ayunan bayi", "mpasi", "lampu tidur anak"] },
+    { id: "rumah-tangga", keys: ["jam dinding"] },
+    { id: "perawatan", keys: ["lotion", "alat cukur", "alat pijat"] },
   ];
 
   const isFilled = (link) => {
