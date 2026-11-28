@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#c2410c">
+  <meta name="robots" content="noindex">
+  <title>Bikin Video di HP — Gratis, Tanpa Server</title>
+  <meta name="description" content="Gabung video & foto jadi satu video TikTok langsung di HP. Gratis, tanpa upload, tanpa pulsa AI.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23E03E1A'/%3E%3Cpath fill='%23fff' d='M12 9l12 7-12 7z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <h1>🎬 Bikin Video di HP</h1>
+  <p>Gabung video &amp; foto jadi satu video TikTok. Semua diproses di HP kamu — video <b>nggak diupload</b> ke mana-mana dan <b>gratis</b>.</p>
+</header>
+
+<main>
+  <!-- 1 -->
+  <section class="card" id="sec-klip">
+    <h2><span class="no">1</span> Pilih video &amp; foto</h2>
+    <label class="btn big" for="file-media">➕ Tambah video / foto</label>
+    <input id="file-media" type="file" accept="video/*,image/*" multiple hidden>
+    <p class="hint" id="klip-kosong">Belum ada. Tekan tombol di atas, lalu pilih beberapa video atau foto dari galeri.</p>
+    <ol id="daftar" class="daftar"></ol>
+    <p class="hint">Urutan dari atas ke bawah. Pakai tombol ▲ ▼ untuk geser urutannya.</p>
+  </section>
+
+  <!-- 2 -->
+  <section class="card">
+    <h2><span class="no">2</span> Ukuran video</h2>
+    <div class="pilihan" id="pil-ukuran">
+      <label><input type="radio" name="ukuran" value="1080x1920" checked><span><b>TikTok 9:16</b><small>1080×1920 · bagus</small></span></label>
+      <label><input type="radio" name="ukuran" value="720x1280"><span><b>TikTok hemat</b><small>720×1280 · cepat &amp; ringan</small></span></label>
+      <label><input type="radio" name="ukuran" value="1080x1080"><span><b>Kotak 1:1</b><small>1080×1080</small></span></label>
+      <label><input type="radio" name="ukuran" value="1280x720"><span><b>Lebar 16:9</b><small>1280×720</small></span></label>
+    </div>
+    <div class="baris">
+      <span class="lbl">Isi layar</span>
+      <div class="seg">
+        <label><input type="radio" name="fit" value="cover" checked><span>Penuh (tepi dipotong)</span></label>
+        <label><input type="radio" name="fit" value="contain"><span>Muat semua (ada garis hitam)</span></label>
+      </div>
+    </div>
+    <label class="cek"><input type="checkbox" id="kenburns" checked> Foto bergerak pelan (zoom) biar nggak kaku</label>
+  </section>
+
+  <!-- 3 -->
+  <section class="card">
+    <h2><span class="no">3</span> Tulisan (caption)</h2>
+    <textarea id="teks" rows="2" maxlength="120" placeholder="Contoh: Murah banget! Link di bio 👆"></textarea>
+    <div class="baris">
+      <span class="lbl">Posisi</span>
+      <div class="seg">
+        <label><input type="radio" name="pos" value="top"><span>Atas</span></label>
+        <label><input type="radio" name="pos" value="middle"><span>Tengah</span></label>
+        <label><input type="radio" name="pos" value="bottom" checked><span>Bawah</span></label>
+      </div>
+    </div>
+    <div class="baris">
+      <span class="lbl">Ukuran huruf</span>
+      <div class="seg">
+        <label><input type="radio" name="huruf" value="0.065"><span>Sedang</span></label>
+        <label><input type="radio" name="huruf" value="0.085" checked><span>Besar</span></label>
+        <label><input type="radio" name="huruf" value="0.105"><span>Jumbo</span></label>
+      </div>
+    </div>
+    <div class="baris">
+      <span class="lbl">Warna</span>
+      <div class="seg">
+        <label><input type="radio" name="warna" value="#ffffff" checked><span>Putih</span></label>
+        <label><input type="radio" name="warna" value="#ffe14d"><span>Kuning</span></label>
+      </div>
+    </div>
+    <p class="hint">Tulisan otomatis ada garis tepi hitam supaya gampang dibaca. Di 9:16, posisi sudah dijaga supaya tidak ketutup tombol TikTok.</p>
+  </section>
+
+  <!-- 4 -->
+  <section class="card">
+    <h2><span class="no">4</span> Musik (boleh dilewati)</h2>
+    <label class="btn" for="file-musik">🎵 Pilih file musik</label>
+    <input id="file-musik" type="file" accept="audio/*" hidden>
+    <div id="musik-info" class="musik-info" hidden>
+      <span id="musik-nama"></span>
+      <button type="button" class="kecil" id="musik-hapus">Hapus</button>
+    </div>
+    <div class="baris" id="baris-vol" hidden>
+      <span class="lbl">Volume musik <b id="vol-val">70%</b></span>
+      <input id="vol" type="range" min="0" max="100" value="70">
+    </div>
+    <label class="cek"><input type="checkbox" id="mute"> Matikan suara asli video</label>
+    <p class="hint">Pakai musik bebas hak cipta ya, biar videonya aman di TikTok.</p>
+  </section>
+
+  <!-- 5 -->
+  <section class="card" id="sec-preview">
+    <h2><span class="no">5</span> Lihat dulu</h2>
+    <div class="layar" id="layar"><canvas id="prev"></canvas><div class="kosong" id="prev-kosong">Preview muncul di sini setelah kamu tambah video / foto</div></div>
+    <div class="kontrol">
+      <button type="button" class="btn" id="play" disabled>▶ Putar</button>
+      <input id="seek" type="range" min="0" max="1000" value="0" disabled aria-label="Geser waktu">
+      <span id="waktu" class="waktu">0:00 / 0:00</span>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="card" id="sec-render">
+    <h2><span class="no">6</span> Jadikan video</h2>
+    <p id="dukung" class="dukung">Cek HP kamu…</p>
+    <button type="button" class="btn big hot" id="render" disabled>🚀 Render video</button>
+    <div id="progres" hidden>
+      <div class="bar"><i id="bar-isi"></i></div>
+      <p id="progres-teks" class="progres-teks">0%</p>
+      <p class="hint">⚠️ Jangan kunci layar atau pindah aplikasi dulu sampai selesai.</p>
+      <button type="button" class="btn" id="batal">Batalkan</button>
+    </div>
+    <p id="error" class="error" hidden></p>
+    <div id="hasil" hidden>
+      <h3>✅ Video jadi!</h3>
+      <video id="hasil-video" controls playsinline></video>
+      <p id="hasil-info" class="hint"></p>
+      <a id="unduh" class="btn big hot" download>⬇️ Simpan video</a>
+      <button type="button" class="btn" id="bagikan" hidden>📤 Kirim ke aplikasi lain (TikTok dll)</button>
+      <div id="hasil-note" class="note"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>Alat gratis dari <a href="../barang-berguna/">Barang Berguna</a>. Semua proses terjadi di HP kamu.</p>
+</footer>
+
+<script src="vendor/mp4-muxer.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
